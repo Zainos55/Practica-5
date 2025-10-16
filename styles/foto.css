@@ -1,0 +1,43 @@
+/* Vista del álbum */
+#album-view {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#album-view img {
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 1px solid #50dd13;
+    transition: transform 0.3s;
+}
+
+#album-view img:hover {
+    transform: scale(1.1);
+}
+
+/* Vista modal */
+#modal-view {
+    display: none; /* Oculta por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+#modal-view img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+/* Desactivar scroll cuando el modal está activo */
+.no-scroll {
+    overflow: hidden;
+}
